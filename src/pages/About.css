@@ -1,5 +1,73 @@
 .about {
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
-  }
-  
+    color: white;
+}
+
+/* 🔥 HEADING */
+.about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+
+    background: linear-gradient(90deg, #f7b733, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 🔥 CARD */
+.about-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: 0.3s ease;
+}
+
+/* 🔥 HOVER EFFECT */
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255, 204, 0, 0.3);
+}
+
+/* 🔥 TEXT */
+.about-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* 🔥 HIGHLIGHT SKILLS */
+.about-card span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* 🔥 HIGHLIGHT BOXES */
+.about-highlights {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.highlight {
+    background: rgba(255, 204, 0, 0.1);
+    color: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+/* 🔥 HOVER */
+.highlight:hover {
+    background: #ffcc00;
+    color: black;
+}

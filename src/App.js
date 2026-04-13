@@ -13,7 +13,7 @@ import "@fontsource/roboto"; // Import Roboto font
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app" style={{ fontFamily: 'Roboto, sans-serif' }}>
         <Navbar />
         <Routes>

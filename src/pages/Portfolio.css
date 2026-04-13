@@ -1,74 +1,93 @@
 .portfolio {
+    padding: 40px 20px;   /* reduce spacing */
     text-align: center;
     color: white;
-    padding: 40px 20px;
 }
 
+/* 🔥 HEADING */
 .portfolio h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+    text-align: center;   /* IMPORTANT */
+    width: 100%;
+
+    background: linear-gradient(90deg, #f7b733, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/* Projects Container */
+/* 🔥 GRID (CENTER PERFECTLY) */
 .projects-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    max-width: 850px;   /* tighter for better centering */
+    margin: auto;
 }
 
-/* Individual Project Card */
+/* 🔥 CARD */
 .project {
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    overflow: hidden;
     text-align: center;
-    width: 320px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: all 0.4s ease;
+     transform: scale(0.95);
 }
 
+/* 🔥 HOVER EFFECT */
 .project:hover {
-    transform: scale(1.05);
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 25px 50px rgba(255, 204, 0, 0.35);
 }
 
-/* Project Image */
+/* 🔥 IMAGE */
 .project img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    height: 150px;
+    object-fit: cover;
 }
 
-/* Project Title */
+/* 🔥 TITLE */
 .project h3 {
-    color: #f7b733;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Project Description */
-.project p {
-    font-size: 1rem;
-    color: #dcdcdc;
-    margin-bottom: 15px;
-}
-
-/* GitHub Link */
-.project a {
     color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    padding: 8px 12px;
-    border: 2px solid #ffcc00;
-    border-radius: 6px;
-    transition: background 0.3s ease, color 0.3s ease;
+    font-size: 1.6rem;
+    margin: 18px 0 10px;
 }
 
+/* 🔥 DESCRIPTION */
+.project p {
+    font-size: 0.95rem;
+    color: #ccc;
+    padding: 0 20px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+/* 🔥 BUTTON */
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 22px;
+
+    background: linear-gradient(135deg, #ffcc00, #f7b733);
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* 🔥 BUTTON HOVER */
 .project a:hover {
-    background: #ffcc00;
-    color: #252525;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
 }

@@ -1,58 +1,80 @@
-/* Skill Carousel Container */
+/* 🔥 CONTAINER */
 .carousel-container {
+    padding: 60px 20px;
     text-align: center;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    color: white;
+}
+
+/* 🔥 TITLE (MATCH PROJECTS) */
+.carousel-title {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+
+    background: linear-gradient(90deg, #f7b733, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 🔥 SLIDE FIX */
+.slide {
+    padding: 10px;
+}
+
+/* 🔥 CARD */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
     border-radius: 15px;
-    max-width: 90%;
-    margin: auto;
-  }
-  
-  .carousel-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #f39c12;
-  }
-  
-  /* Skill Card */
-  .skill-card {
-    background: rgba(255, 255, 255, 0.2);
+
     backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    min-height: 180px;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .skill-icon {
-    font-size: 3rem;
-    color: #f39c12;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition: all 0.3s ease;
+    min-height: 200px;
+}
+
+/* 🔥 HOVER */
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 204, 0, 0.3);
+}
+
+/* 🔥 ICON */
+.skill-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* 🔥 BRAND COLORS */
+.skill-card:nth-child(1) .skill-icon { color: #f7df1e; }
+.skill-card:nth-child(2) .skill-icon { color: #61dafb; }
+.skill-card:nth-child(3) .skill-icon { color: #3c873a; }
+.skill-card:nth-child(4) .skill-icon { color: #4db33d; }
+.skill-card:nth-child(5) .skill-icon { color: #3776ab; }
+.skill-card:nth-child(6) .skill-icon { color: #f1502f; }
+
+/* 🔥 TEXT */
+.skill-card h3 {
+    color: #ffcc00;
     margin-bottom: 10px;
-  }
-  
-  .skill-card h3 {
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  
-  .skill-card p {
-    font-size: 1rem;
-    color: #ddd;
-  }
-  
-  /* Slick Dots Customization */
-  .slick-dots li.slick-active button:before {
-    color: #f39c12 !important;
-  }
-  
-  .slick-prev, .slick-next {
-    color: #f39c12 !important;
-  }
-  
+}
+
+.skill-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* 🔥 DOTS */
+.slick-dots li button:before {
+    color: #aaa !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ffcc00 !important;
+}
+
+/* 🔥 ARROWS */
+.slick-prev:before,
+.slick-next:before {
+    color: #ffcc00 !important;
+}
